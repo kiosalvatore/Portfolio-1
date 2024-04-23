@@ -1,0 +1,32 @@
+.contact_container{
+    /* border: 2px solid red; */
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_container h1 {
+    color: #ffbb33;
+    background-color: #222;
+    margin-bottom: 5px;
+}
+
+.contact_container img{
+    width: 20%;
+    border-radius: 50%;
+    height: 250px;
+    border: #222 3.5px solid;
+    margin-bottom: 5px;
+}
+
+.contact_container p{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.contact_container span{
+    color: #222;
+    font-weight: normal;
+}
