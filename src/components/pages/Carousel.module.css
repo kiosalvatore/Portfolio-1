@@ -1,0 +1,25 @@
+.carousel_container{
+    border: 2px solid blue;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel_content{
+    display: flex;
+    border: 2px solid brown;
+    width: 100%;
+    justify-content: center;
+}
+
+/* .box_carousel{
+    border: 2px solid red;
+    width: 100px;
+    height: 300px;
+} */
+
+.box_carousel img{
+    width: 150px;
+    border: 2px solid purple;
+}

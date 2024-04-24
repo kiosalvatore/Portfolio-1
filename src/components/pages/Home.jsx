@@ -1,7 +1,7 @@
 import styles from './Home.module.css'
 import savings from '../../assets/savings.svg'
 import LinkButton from '../layout/LinkButton'
-import {FaAngular, FaReact, FaHtml, FaCss, FaNode, FaGithub, FaJs } from 'react-icons/fa'
+import { FaAngular } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -16,14 +16,10 @@ export default function Home() {
       <div>
           <ul>
             <li><FaAngular/></li>
-            <li><FaReact/></li>
-            <li><FaHtml/></li>
-            <li><FaCss/></li>
-            <li><FaNode/></li>
-            <li><FaGithub/></li>
-            <li><FaJs/></li>
+            
           </ul>
       </div>
+      
     </section>
   )
 }
