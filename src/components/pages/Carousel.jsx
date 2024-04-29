@@ -1,52 +1,84 @@
+import { Carousel } from "antd";
+import programming from "../../assets/programming.png";
+import styles from "./Carousel.module.css";
+// import Container from "../layout/Container";
 
-import { Carousel } from 'antd';
-import programming from '../../assets/programming.png'
-import styles from './Carousel.module.css'
+const projetos = [
+  {
+    img: programming,
+    title: "buzzfeed",
+    description: "loremloremlorem",
+    link: "https/123",
+  },
+  {
+    img: programming,
+    title: "buzzfeed",
+    description: "loremloremlorem",
+    link: "https/123",
+  },
+  {
+    img: programming,
+    title: "buzzfeed",
+    description: "loremloremlorem",
+    link: "https/123",
+  },
+  {
+    img: programming,
+    title: "buzzfeed",
+    description: "loremloremlorem",
+    link: "https/123",
+  },
+];
 
-
- const projetos = [
-    {
-        img: programming,
-        title: 'buzzfeed',
-        description: 'loremloremlorem',
-        link: 'https/123',
-    },
-    {
-        img: programming,
-        title: 'buzzfeed',
-        description: 'loremloremlorem',
-        link: 'https/123',
-    },
-    {
-        img: programming,
-        title: 'buzzfeed',
-        description: 'loremloremlorem',
-        link: 'https/123',
-    },
-    {
-        img: programming,
-        title: 'buzzfeed',
-        description: 'loremloremlorem',
-        link: 'https/123',
-    },
- ]
-
-const Carossel = () => (
-  <div className={styles.carousel_container}>
-      
-      <Carousel autoplay className={styles.carousel_content}>
-
-        {projetos.map((data, id) => (
-
-        <div className={styles.box_carousel} key={id}>
-            <img src={data.img} alt="" />
-            <h3>{data.title}</h3>
-            <p>{data.description}</p>
-            <span>{data.link}</span>
-        </div>
-
-        ))}
-      </Carousel>
-  </div>
+const Carrossel = () => (
+  <>
+   
+      <section className={styles.sectionProjetos}>
+        <h2>Projetos</h2>
+        <Carousel
+          autoplay
+          pauseOnHover
+          // initialSlide={4}
+          slidesToShow={3}
+          dots={false}
+          className={styles.carouselWrapper}
+          responsive={[
+            {
+              breakpoint: 1181,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ]}
+        >
+          {projetos.map((projeto, index) => (
+            <div key={index} className={styles.boxCards}>
+              <img src={projeto.img} alt={projeto.titulo} />
+              <h3>{projeto.title}</h3>
+              <p>{projeto.description}</p>
+            </div>
+          ))}
+        </Carousel>
+      </section>
+   
+  </>
 );
-export default Carossel;
+export default Carrossel;

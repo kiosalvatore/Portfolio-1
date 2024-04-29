@@ -1,26 +1,32 @@
-.navbar{
+.navbar {
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     background-color: #222;
     padding: 1em;
-}
+  }
 
-.list{
+  .navbar_space{
+    width: 100%;
+  }
+  
+  .list {
+    /* border: 2px solid yellow; */
     display: flex;
     list-style: none;
     align-items: center;
-}
-
-.item{
+  }
+  
+  .item {
     margin-right: 1em;
-}
-
-.item a{
+  }
+  
+  .item a {
     color: white;
     text-decoration: none;
-
-}
-
-.item a:hover{
+  }
+  
+  .item a:hover {
     color: #ffbb33;
-}
+  }
+  

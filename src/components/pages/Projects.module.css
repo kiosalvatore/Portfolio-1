@@ -1,9 +1,14 @@
 .project_container{
+    border: 2px solid blue;
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title_container {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     margin-bottom: 2em;
 }
+

@@ -29,3 +29,17 @@
     width: 350px;
     margin: 2em 0;
 }
+
+.home_container ul {
+    /* border: 2px solid black; */
+    color: #222;
+    list-style: none;
+    font-size: 2em;
+    height: 100px;
+    width: 350px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
