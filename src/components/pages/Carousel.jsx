@@ -1,31 +1,34 @@
 import { Carousel } from "antd";
-import programming from "../../assets/programming.png";
+import projeto1 from "../../assets/projeto1.jpg";
+import projeto2 from "../../assets/projeto2.jpg";
+import projeto3 from "../../assets/projeto3.jpg";
+import projeto4 from "../../assets/projeto4.jpg";
 import styles from "./Carousel.module.css";
 // import Container from "../layout/Container";
 
 const projetos = [
   {
-    img: programming,
-    title: "buzzfeed",
-    description: "loremloremlorem",
+    img: projeto1,
+    title: "AngularBlog",
+    description: "Blog Simples feito com Angular e TypeScript",
     link: "https/123",
   },
   {
-    img: programming,
-    title: "buzzfeed",
-    description: "loremloremlorem",
+    img: projeto2,
+    title: "Loja de Acessórios",
+    description: "Aplicação para Loja de Acessórios",
     link: "https/123",
   },
   {
-    img: programming,
-    title: "buzzfeed",
-    description: "loremloremlorem",
+    img: projeto3,
+    title: "Interface McDonalds",
+    description: "Projeto Simples com Interface Interativa",
     link: "https/123",
   },
   {
-    img: programming,
-    title: "buzzfeed",
-    description: "loremloremlorem",
+    img: projeto4,
+    title: "Buzzfeed",
+    description: "Aplicação de Quizz Interativa Feita com Angular",
     link: "https/123",
   },
 ];
