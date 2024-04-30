@@ -16,13 +16,13 @@ const projetos = [
   {
     img: projeto2,
     title: "Loja de Acessórios",
-    description: "Aplicação para Loja de Acessórios",
+    description: "Aplicação para Loja de Acessórios feita com React.js",
     link: "https/123",
   },
   {
     img: projeto3,
     title: "Interface McDonalds",
-    description: "Projeto Simples com Interface Interativa",
+    description: "Projeto Simples com Interface Interativa feita com React.js",
     link: "https/123",
   },
   {

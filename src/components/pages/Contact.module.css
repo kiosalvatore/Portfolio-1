@@ -30,3 +30,15 @@
     color: #222;
     font-weight: normal;
 }
+
+.contact_container a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #222;
+}
+
+.contact_container a:hover{
+    cursor: pointer;
+    color: #ffbb33;
+}
